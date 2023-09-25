@@ -1,0 +1,72 @@
+.cart {
+  padding: 20px 0;
+  min-height: 55vh;
+}
+
+.cartItem {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e6e1e1;
+}
+
+.cartItem .cartImg {
+  object-fit: contain;
+}
+
+.cartQnt button {
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: #ffd500;
+  border-radius: 3px;
+}
+
+.cartQnt span {
+  margin: 0 10px;
+}
+
+
+.cartHeader {
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #7b7b7b;
+}
+
+.cartRemove {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #a52f2f;
+  color: white;
+}
+
+.subTotal {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.totalPrice {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(206, 206, 206);
+  width: 300px;
+  height: 100px;
+}
+.goShop{
+  padding-top: 50px;
+  text-align: center;
+}
+.goShop button{
+  font-weight: bold;
+  padding: 15px 25px;
+  background-color: #ffd500;
+  border-radius: 7px;
+}
+
+
+
+@media screen and (max-width:426px) {
+
+
+}

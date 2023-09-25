@@ -1,0 +1,15 @@
+.popup{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 200px;
+position: fixed;
+z-index: 999;
+left: 50%;
+transform: translateX(-50%);
+top: 0;
+padding: 10px;
+background-color: rgba(0, 0, 0, 0.5);
+color: #fff;
+
+}
