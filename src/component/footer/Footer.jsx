@@ -5,7 +5,7 @@ import {
     FaTwitter,
     FaLinkedin,
 } from "react-icons/fa";
-import "./style.css";
+import "./Style.css";
 
 const Footer = () => {
     return (
