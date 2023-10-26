@@ -44,15 +44,34 @@
   flex-direction: row-reverse;
 }
 
-.totalPrice {
+.checkout {
   padding: 10px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   background-color: rgb(206, 206, 206);
   width: 300px;
-  height: 100px;
 }
+.totalPrice,
+.DelCharge{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.checkout .btn{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.checkout .btn button{
+  padding: 6px 12px;
+  background-color: #daba16;
+  color: #000;
+  border-radius: 7px;
+font-weight: bold;
+}
+.checkout .btn button:active{
+  background-color: #ffd500;
+}
+
 .goShop{
   padding-top: 50px;
   text-align: center;

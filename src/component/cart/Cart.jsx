@@ -7,12 +7,6 @@ const Cart = () => {
     const cartp = useSelector(state => state.carts.cart)
     const subTotal = Number(useSelector(state => state.carts.subTotal))
     const dispatch = useDispatch()
-    // console.log(cartp)
-    // console.log(subTotal)
-
-    
-    // console.log(localStorage.getItem("z-cart"))
-
     useEffect(() => {
         dispatch(totalPrice())
         localStorage.setItem("z-cart", JSON.stringify(cartp))
@@ -72,11 +66,21 @@ const Cart = () => {
                 {
                     cartp.length > 0 ?
                         <div className="subTotal">
-                            <div className="totalPrice">
-                                <span>Sub Total: </span>
-                                <strong>$ {subTotal.toFixed(2)} </strong>
+                            <div className="checkout">
+                                <div className="totalPrice">
+                                    <span>Sub Total: </span>
+                                    <strong>$ {subTotal.toFixed(2)} </strong>
+                                </div>
+                                <div className="DelCharge">
+                                    <span>Delivery Charge: </span>
+                                    <strong>$ 0.00 </strong>
+                                </div>
+                                <div className="btn">
+                                    <button>CheckOut</button>
+                                </div>
                             </div>
-                        </div> :
+                        </div>
+                        :
                         (
                             <div className='goShop'>
                                 <Link to='/'>
