@@ -19,12 +19,7 @@ const Footer = () => {
                     <li className="menuItem">FAQ</li>
                 </ul>
                 <div className="infoText">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
+                Explore a world of choices with our handpicked selection. Enjoy easy browsing, safe transactions, and top-notch products. Shop with confidence, stay in the loop with the latest trends, and make your online shopping better than ever. Your satisfaction matters most. Join us and upgrade your shopping experience now.
                 </div>
                 <div className="socialIcons">
                     <span className="icon">
