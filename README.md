@@ -1,8 +1,15 @@
-# React + Vite
+# Z-Mart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive e-commerce storefront built with React and Redux Toolkit. It loads products from the FakeStore API and has a shopping cart that keeps its contents between visits.
 
-Currently, two official plugins are available:
+## Tech Stack
+React.js, Redux Toolkit, React Redux, React Router, Axios, React Slick, Vite, FakeStore API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
+- **Product catalog:** loads products from the FakeStore API with Redux Toolkit async thunks and shows category sections (men's, women's, jewelry, electronics). Skeleton loaders appear while data loads.
+- **Routing:** client-side navigation between Home, Products, Cart and dynamic product detail pages (`/ProductDetail/:id`).
+- **Shopping cart:** add and remove items, change quantities, see a live subtotal, and keep the cart saved in localStorage.
+
+## Links
+- Live Demo: [Add live demo URL]
+- GitHub: [github.com/Abuzaid98/z-mart](https://github.com/Abuzaid98/z-mart)

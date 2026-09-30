@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
+let cartFromLocalStorage = JSON.parse(localStorage.getItem("z-cart")) || []
 const initialState={
-    cart:[],
+    cart:cartFromLocalStorage,
     subTotal:""
 }
 export const cartSlice = createSlice({

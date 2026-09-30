@@ -9,9 +9,15 @@ const Cart = () => {
     const dispatch = useDispatch()
     // console.log(cartp)
     // console.log(subTotal)
+
+
+    // console.log(localStorage.getItem("z-cart"))
+
     useEffect(() => {
         dispatch(totalPrice())
+        localStorage.setItem("z-cart", JSON.stringify(cartp))
     }, [cartp])
+
     return (
         <div className='container'>
             <div className="cart">
@@ -26,7 +32,7 @@ const Cart = () => {
                 </div>
 
                 {
-                    cartp.map((el, i) => {
+                    cartp?.map((el, i) => {
                         return (
                             <div key={i} className="cartItem">
                                 <div className="row">
@@ -66,9 +72,16 @@ const Cart = () => {
                 {
                     cartp.length > 0 ?
                         <div className="subTotal">
-                            <div className="totalPrice">
-                                <span>Sub Total: </span>
-                                <strong>$ {subTotal.toFixed(2)} </strong>
+                            <div>
+
+                                <div className="totalPrice">
+                                    <span>Sub Total: </span>
+                                    <strong>$ {subTotal.toFixed(2)} </strong>
+                                </div>
+                                <div className="charge">
+                                    <span>Delivery Charge: </span>
+                                    <strong>$ 0.00</strong>
+                                </div>
                             </div>
                         </div> :
                         (
